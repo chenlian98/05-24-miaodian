@@ -1,0 +1,40 @@
+﻿html,h1,h2,h3,h4,h5,h6,span,h1,p,a,img,ul,li,ol,input,body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+ui,li {
+    list-style : none;
+}
+.clearfix:after{/*伪元素是行内元素 正常浏览器清除浮动方法*/
+    content: "";
+    height: 0;
+    clear:both;
+    display: block;
+    visibility: hidden;
+}
+
+input{
+    outline: none;
+}
+
+.clearfix{
+    zoom: 1;/*ie6清除浮动的方式 *号只有IE6-IE7执行，其他浏览器不执行*/
+}
+
+i,b,s {
+    font-style: normal;
+}
+
+/* 去除input number 的默认样式*/
+input[type=number] {
+    -moz-appearance:textfield;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
